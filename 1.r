@@ -1,4 +1,4 @@
-source("https://raw.githubusercontent.com/rnorouzian/i/master/i.r")
+source("https://raw.githubusercontent.com/izeh/i/master/i.r")
 
 d <- seq(.1, .5, .05)
 
