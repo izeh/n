@@ -5,7 +5,7 @@ d <- seq(.1, .5, .05)
 plot(1, xlim = range(d), ylim = c(0, 1600), xlab = "Cohen's d", ylab = "Group Sample Size", font.lab = 2)
 axis(1, at = c(.15, .361), col.axis = "purple")
 
-n <- power.t(d = d, power = .8)$n1
+n <- power.t(d = d)$n1
 lines(d, n, type = "b", pch = 16, col = 4, cex = 1.6)
 m <- plan.t.ci(d, width = .5)$n1
 lines(d, m, type = "o", col = 2, pch = 15, cex = 1.2, lty = 3)
